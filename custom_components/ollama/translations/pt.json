@@ -1,0 +1,110 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Servi\u00e7o j\u00e1 configurado"
+        },
+        "error": {
+            "cannot_connect": "A liga\u00e7\u00e3o falhou",
+            "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida",
+            "invalid_url": "Endere\u00e7o IP ou anfitri\u00e3o inv\u00e1lido.",
+            "unknown": "Erro inesperado"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Chave da API"
+                },
+                "description": "A integra\u00e7\u00e3o Ollama precisa de se autenticar novamente com a sua chave API Ollama.",
+                "title": "A autentica\u00e7\u00e3o expirou para {name}"
+            },
+            "user": {
+                "data": {
+                    "api_key": "Chave da API",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "A liga\u00e7\u00e3o falhou",
+                "download_failed": "O download do modelo falhou",
+                "entry_not_loaded": "Falha ao adicionar o agente. A configura\u00e7\u00e3o est\u00e1 desativada."
+            },
+            "entry_type": "Tarefa de IA",
+            "initiate_flow": {
+                "reconfigure": "Reconfigurar tarefa de IA",
+                "user": "Adicionar tarefa de IA"
+            },
+            "progress": {
+                "download": "Aguarde enquanto o modelo \u00e9 transferido, o que pode demorar muito tempo. Consulte os registos do seu servidor Ollama para obter mais informa\u00e7\u00f5es."
+            },
+            "step": {
+                "download": {
+                    "title": "A transferir modelo"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Manter vivo",
+                        "max_history": "M\u00e1ximo de mensagens do hist\u00f3rico",
+                        "model": "Modelo",
+                        "name": "Nome",
+                        "num_ctx": "Tamanho da janela de contexto",
+                        "prompt": "Instru\u00e7\u00f5es",
+                        "think": "Pensar antes de responder"
+                    },
+                    "data_description": {
+                        "keep_alive": "Dura\u00e7\u00e3o em segundos para que Ollama mantenha o modelo em mem\u00f3ria. -1 = indefinido, 0 = nunca.",
+                        "num_ctx": "N\u00famero m\u00e1ximo de tokens de texto que o modelo pode processar. Diminuir para reduzir a RAM do Ollama, ou aumentar para um grande n\u00famero de entidades expostas.",
+                        "prompt": "Indicar como o LLM deve responder. Pode ser um modelo.",
+                        "think": "Se ativado, o LLM pensar\u00e1 antes de responder. Isto pode melhorar a qualidade da resposta, mas pode aumentar a lat\u00eancia."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "A liga\u00e7\u00e3o falhou",
+                "download_failed": "O download do modelo falhou",
+                "entry_not_loaded": "Falha ao adicionar o agente. A configura\u00e7\u00e3o est\u00e1 desativada."
+            },
+            "entry_type": "Agente de conversa\u00e7\u00e3o",
+            "initiate_flow": {
+                "reconfigure": "Reconfigurar o agente de conversa\u00e7\u00e3o",
+                "user": "Adicionar agente de conversa\u00e7\u00e3o"
+            },
+            "progress": {
+                "download": "Aguarde enquanto o modelo \u00e9 transferido, o que pode demorar muito tempo. Consulte os registos do seu servidor Ollama para obter mais informa\u00e7\u00f5es."
+            },
+            "step": {
+                "download": {
+                    "title": "A transferir modelo"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Manter vivo",
+                        "llm_hass_api": "Controlar Home Assistant",
+                        "max_history": "M\u00e1ximo de mensagens do hist\u00f3rico",
+                        "model": "Modelo",
+                        "name": "Nome",
+                        "num_ctx": "Tamanho da janela de contexto",
+                        "prompt": "Instru\u00e7\u00f5es",
+                        "think": "Pensar antes de responder"
+                    },
+                    "data_description": {
+                        "keep_alive": "Dura\u00e7\u00e3o em segundos para que Ollama mantenha o modelo em mem\u00f3ria. -1 = indefinido, 0 = nunca.",
+                        "num_ctx": "N\u00famero m\u00e1ximo de tokens de texto que o modelo pode processar. Diminuir para reduzir a RAM do Ollama, ou aumentar para um grande n\u00famero de entidades expostas.",
+                        "prompt": "Indicar como o LLM deve responder. Pode ser um modelo.",
+                        "think": "Se ativado, o LLM pensar\u00e1 antes de responder. Isto pode melhorar a qualidade da resposta, mas pode aumentar a lat\u00eancia."
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "unsupported_attachment_type": {
+            "message": "O Ollama apenas suporta anexos de imagens no conte\u00fado do utilizador, mas recebeu anexos sem imagens."
+        }
+    }
+}

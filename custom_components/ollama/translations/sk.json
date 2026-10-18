@@ -1,0 +1,110 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Slu\u017eba u\u017e je nakonfigurovan\u00e1"
+        },
+        "error": {
+            "cannot_connect": "Nepodarilo sa pripoji\u0165",
+            "invalid_auth": "Neplatn\u00e9 overenie",
+            "invalid_url": "Neplatn\u00fd n\u00e1zov hostite\u013ea alebo IP adresa",
+            "unknown": "Neo\u010dak\u00e1van\u00e1 chyba"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API k\u013e\u00fa\u010d"
+                },
+                "description": "Integr\u00e1cia Ollama sa mus\u00ed znova overi\u0165 pomocou v\u00e1\u0161ho k\u013e\u00fa\u010da Ollama API.",
+                "title": "Vypr\u0161ala platnos\u0165 overenia pre {name}"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API k\u013e\u00fa\u010d",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Nepodarilo sa pripoji\u0165",
+                "download_failed": "Stiahnutie modelu zlyhalo",
+                "entry_not_loaded": "Nepodarilo sa prida\u0165 agenta. Konfigur\u00e1cia je deaktivovan\u00e1."
+            },
+            "entry_type": "\u00daloha AI",
+            "initiate_flow": {
+                "reconfigure": "Rekonfigur\u00e1cia \u00falohy AI",
+                "user": "Prida\u0165 AI \u00falohu"
+            },
+            "progress": {
+                "download": "Po\u010dkajte, pros\u00edm, k\u00fdm sa model stiahne, \u010do m\u00f4\u017ee trva\u0165 ve\u013emi dlho. Podrobnej\u0161ie inform\u00e1cie n\u00e1jdete v denn\u00edkoch servera Ollama."
+            },
+            "step": {
+                "download": {
+                    "title": "Stiahnutie modelu"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Udr\u017ea\u0165 na\u017eive",
+                        "max_history": "Maxim\u00e1lny po\u010det spr\u00e1v hist\u00f3rie",
+                        "model": "Model",
+                        "name": "N\u00e1zov",
+                        "num_ctx": "Ve\u013ekos\u0165 kontextov\u00e9ho okna",
+                        "prompt": "In\u0161trukcie",
+                        "think": "Prem\u00fd\u0161\u013eajte sk\u00f4r, ako odpoviete"
+                    },
+                    "data_description": {
+                        "keep_alive": "Trvanie v sekund\u00e1ch, po\u010das ktor\u00e9ho m\u00e1 Ollama uchov\u00e1va\u0165 model v pam\u00e4ti. -1 = neobmedzene, 0 = nikdy.",
+                        "num_ctx": "Maxim\u00e1lny po\u010det textov\u00fdch tokenov, ktor\u00e9 m\u00f4\u017ee model spracova\u0165. Ni\u017e\u0161ie, aby sa zn\u00ed\u017eila pam\u00e4\u0165 RAM Ollama, alebo vy\u0161\u0161ie pre ve\u013ek\u00fd po\u010det vystaven\u00fdch ent\u00edt.",
+                        "prompt": "Pokyn, ako by mal LLM reagova\u0165. M\u00f4\u017ee \u00eds\u0165 o \u0161abl\u00f3nu.",
+                        "think": "Ak je t\u00e1to funkcia povolen\u00e1, LLM sa pred odpove\u010fou zamysl\u00ed. To m\u00f4\u017ee zlep\u0161i\u0165 kvalitu odpovede, ale m\u00f4\u017ee zv\u00fd\u0161i\u0165 oneskorenie."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Nepodarilo sa pripoji\u0165",
+                "download_failed": "Stiahnutie modelu zlyhalo",
+                "entry_not_loaded": "Nepodarilo sa prida\u0165 agenta. Konfigur\u00e1cia je deaktivovan\u00e1."
+            },
+            "entry_type": "Agent pre konverz\u00e1ciu",
+            "initiate_flow": {
+                "reconfigure": "Zmena konfigur\u00e1cie agenta konverz\u00e1cie",
+                "user": "Prida\u0165 agenta na konverz\u00e1ciu"
+            },
+            "progress": {
+                "download": "Po\u010dkajte, pros\u00edm, k\u00fdm sa model stiahne, \u010do m\u00f4\u017ee trva\u0165 ve\u013emi dlho. Podrobnej\u0161ie inform\u00e1cie n\u00e1jdete v denn\u00edkoch servera Ollama."
+            },
+            "step": {
+                "download": {
+                    "title": "Stiahnutie modelu"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Udr\u017ea\u0165 na\u017eive",
+                        "llm_hass_api": "Ovl\u00e1danie Home Assistant",
+                        "max_history": "Maxim\u00e1lny po\u010det spr\u00e1v hist\u00f3rie",
+                        "model": "Model",
+                        "name": "N\u00e1zov",
+                        "num_ctx": "Ve\u013ekos\u0165 kontextov\u00e9ho okna",
+                        "prompt": "In\u0161trukcie",
+                        "think": "Prem\u00fd\u0161\u013eajte sk\u00f4r, ako odpoviete"
+                    },
+                    "data_description": {
+                        "keep_alive": "Trvanie v sekund\u00e1ch, po\u010das ktor\u00e9ho m\u00e1 Ollama uchov\u00e1va\u0165 model v pam\u00e4ti. -1 = neobmedzene, 0 = nikdy.",
+                        "num_ctx": "Maxim\u00e1lny po\u010det textov\u00fdch tokenov, ktor\u00e9 m\u00f4\u017ee model spracova\u0165. Ni\u017e\u0161ie, aby sa zn\u00ed\u017eila pam\u00e4\u0165 RAM Ollama, alebo vy\u0161\u0161ie pre ve\u013ek\u00fd po\u010det vystaven\u00fdch ent\u00edt.",
+                        "prompt": "Pokyn, ako by mal LLM reagova\u0165. M\u00f4\u017ee \u00eds\u0165 o \u0161abl\u00f3nu.",
+                        "think": "Ak je t\u00e1to funkcia povolen\u00e1, LLM sa pred odpove\u010fou zamysl\u00ed. To m\u00f4\u017ee zlep\u0161i\u0165 kvalitu odpovede, ale m\u00f4\u017ee zv\u00fd\u0161i\u0165 oneskorenie."
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "unsupported_attachment_type": {
+            "message": "Ollama podporuje iba obrazov\u00e9 pr\u00edlohy v pou\u017e\u00edvate\u013eskom obsahu, ale prijala neobr\u00e1zkov\u00e9 pr\u00edlohy."
+        }
+    }
+}

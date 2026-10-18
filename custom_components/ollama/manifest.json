@@ -1,0 +1,13 @@
+{
+  "domain": "ollama",
+  "name": "Ollama",
+  "after_dependencies": ["assist_pipeline", "intent"],
+  "codeowners": ["@synesthesiam"],
+  "config_flow": true,
+  "dependencies": ["conversation"],
+  "documentation": "https://github.com/rhythmcreative/ha-ollama",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "requirements": ["ollama==0.6.2"],
+  "version": "1.1.0"
+}

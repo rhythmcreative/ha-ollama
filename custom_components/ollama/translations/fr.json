@@ -1,0 +1,110 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Le service est d\u00e9j\u00e0 configur\u00e9"
+        },
+        "error": {
+            "cannot_connect": "\u00c9chec de la connexion",
+            "invalid_auth": "Authentification non valide",
+            "invalid_url": "Nom d'h\u00f4te ou adresse IP non valide",
+            "unknown": "Erreur inattendue"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Cl\u00e9 API"
+                },
+                "description": "L'int\u00e9gration Ollama doit se r\u00e9-authentifier \u00e0 l'aide de votre cl\u00e9 d'API Ollama.",
+                "title": "L'authentification a expir\u00e9 pour {name}"
+            },
+            "user": {
+                "data": {
+                    "api_key": "Cl\u00e9 API",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "\u00c9chec de la connexion",
+                "download_failed": "Le t\u00e9l\u00e9chargement du mod\u00e8le a \u00e9chou\u00e9",
+                "entry_not_loaded": "\u00c9chec de l'ajout de l'agent. La configuration est d\u00e9sactiv\u00e9e."
+            },
+            "entry_type": "T\u00e2che d'IA",
+            "initiate_flow": {
+                "reconfigure": "Reconfigurer la t\u00e2che d'IA",
+                "user": "Ajouter une t\u00e2che d'IA"
+            },
+            "progress": {
+                "download": "Veuillez patienter pendant le t\u00e9l\u00e9chargement du mod\u00e8le, ce qui peut prendre beaucoup de temps. V\u00e9rifiez les journaux de votre serveur Ollama pour plus de d\u00e9tails."
+            },
+            "step": {
+                "download": {
+                    "title": "T\u00e9l\u00e9chargement du mod\u00e8le"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Maintien en m\u00e9moire",
+                        "max_history": "Nombre maximal de messages d'historique",
+                        "model": "Mod\u00e8le",
+                        "name": "Nom",
+                        "num_ctx": "Taille de la fen\u00eatre contextuelle",
+                        "prompt": "Instructions",
+                        "think": "R\u00e9fl\u00e9chir avant de r\u00e9pondre"
+                    },
+                    "data_description": {
+                        "keep_alive": "Dur\u00e9e en secondes pendant laquelle Ollama garde le mod\u00e8le en m\u00e9moire. -1 = ind\u00e9fini, 0 = jamais.",
+                        "num_ctx": "Nombre maximal de jetons de texte que le mod\u00e8le peut traiter. R\u00e9duisez-le pour r\u00e9duire la RAM Ollama ou augmentez-le pour un grand nombre d'entit\u00e9s expos\u00e9es.",
+                        "prompt": "Indiquez comment le LLM doit r\u00e9pondre. Il peut s'agir d'un mod\u00e8le.",
+                        "think": "Si cette option est activ\u00e9e, le LLM r\u00e9fl\u00e9chira avant de r\u00e9pondre. Cela peut am\u00e9liorer la qualit\u00e9 de la r\u00e9ponse, mais peut augmenter la latence."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "\u00c9chec de la connexion",
+                "download_failed": "Le t\u00e9l\u00e9chargement du mod\u00e8le a \u00e9chou\u00e9",
+                "entry_not_loaded": "\u00c9chec de l'ajout de l'agent. La configuration est d\u00e9sactiv\u00e9e."
+            },
+            "entry_type": "Agent de conversation",
+            "initiate_flow": {
+                "reconfigure": "Reconfigurer l'agent de conversation",
+                "user": "Ajouter un agent de conversation"
+            },
+            "progress": {
+                "download": "Veuillez patienter pendant le t\u00e9l\u00e9chargement du mod\u00e8le, ce qui peut prendre beaucoup de temps. V\u00e9rifiez les journaux de votre serveur Ollama pour plus de d\u00e9tails."
+            },
+            "step": {
+                "download": {
+                    "title": "T\u00e9l\u00e9chargement du mod\u00e8le"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Maintien en m\u00e9moire",
+                        "llm_hass_api": "Contr\u00f4ler Home Assistant",
+                        "max_history": "Nombre maximal de messages d'historique",
+                        "model": "Mod\u00e8le",
+                        "name": "Nom",
+                        "num_ctx": "Taille de la fen\u00eatre contextuelle",
+                        "prompt": "Instructions",
+                        "think": "R\u00e9fl\u00e9chir avant de r\u00e9pondre"
+                    },
+                    "data_description": {
+                        "keep_alive": "Dur\u00e9e en secondes pendant laquelle Ollama garde le mod\u00e8le en m\u00e9moire. -1 = ind\u00e9fini, 0 = jamais.",
+                        "num_ctx": "Nombre maximal de jetons de texte que le mod\u00e8le peut traiter. R\u00e9duisez-le pour r\u00e9duire la RAM Ollama ou augmentez-le pour un grand nombre d'entit\u00e9s expos\u00e9es.",
+                        "prompt": "Indiquez comment le LLM doit r\u00e9pondre. Il peut s'agir d'un mod\u00e8le.",
+                        "think": "Si cette option est activ\u00e9e, le LLM r\u00e9fl\u00e9chira avant de r\u00e9pondre. Cela peut am\u00e9liorer la qualit\u00e9 de la r\u00e9ponse, mais peut augmenter la latence."
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "unsupported_attachment_type": {
+            "message": "Ollama prend uniquement en charge les pi\u00e8ces jointes d'images dans le contenu utilisateur, mais une pi\u00e8ce jointe non image a \u00e9t\u00e9 re\u00e7ue."
+        }
+    }
+}

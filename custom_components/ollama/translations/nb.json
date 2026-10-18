@@ -1,0 +1,21 @@
+{
+    "config_subentries": {
+        "ai_task_data": {
+            "entry_type": "AI-oppgave",
+            "initiate_flow": {
+                "reconfigure": "Konfigurer AI-oppgaven p\u00e5 nytt",
+                "user": "Legg til AI-oppgave"
+            }
+        },
+        "conversation": {
+            "abort": {
+                "entry_not_loaded": "Kunne ikke legge til agent. Konfigurasjonen er deaktivert."
+            },
+            "entry_type": "Samtaleagent",
+            "initiate_flow": {
+                "reconfigure": "Konfigurer samtaleagenten p\u00e5 nytt",
+                "user": "Legg til samtaleagent"
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El servicio ya est\u00e1 configurado"
+        },
+        "error": {
+            "cannot_connect": "No se pudo conectar",
+            "invalid_auth": "Autenticaci\u00f3n no v\u00e1lida",
+            "invalid_url": "Nombre de host o direcci\u00f3n IP no v\u00e1lidos",
+            "unknown": "Error inesperado"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Clave API"
+                },
+                "description": "La integraci\u00f3n de Ollama necesita volver a autenticarse con tu clave API de Ollama.",
+                "title": "Autenticaci\u00f3n caducada para {name}"
+            },
+            "user": {
+                "data": {
+                    "api_key": "Clave API",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "No se pudo conectar",
+                "download_failed": "Fallo en la descarga del modelo",
+                "entry_not_loaded": "No se pudo a\u00f1adir el agente. La configuraci\u00f3n est\u00e1 deshabilitada."
+            },
+            "entry_type": "Tarea de IA",
+            "initiate_flow": {
+                "reconfigure": "Volver a configurar la tarea de IA",
+                "user": "A\u00f1adir tarea IA"
+            },
+            "progress": {
+                "download": "Por favor, espera mientras se descarga el modelo, lo que puede llevar mucho tiempo. Revisa los registros de tu servidor Ollama para obtener m\u00e1s detalles."
+            },
+            "step": {
+                "download": {
+                    "title": "Descargando modelo"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Mantener vivo",
+                        "max_history": "M\u00e1ximo de mensajes del historial",
+                        "model": "Modelo",
+                        "name": "Nombre",
+                        "num_ctx": "Tama\u00f1o de la ventana de contexto",
+                        "prompt": "Instrucciones",
+                        "think": "Pensar antes de responder"
+                    },
+                    "data_description": {
+                        "keep_alive": "Duraci\u00f3n en segundos que tarda Ollama en mantener el modelo en la memoria. -1 = indefinido, 0 = nunca.",
+                        "num_ctx": "N\u00famero m\u00e1ximo de tokens de texto que el modelo puede procesar. Disminuye el valor para reducir la RAM de Ollama o aum\u00e9ntalo para una gran cantidad de entidades expuestas.",
+                        "prompt": "Indica c\u00f3mo debe responder el LLM. Puede ser una plantilla.",
+                        "think": "Si est\u00e1 habilitado, el LLM pensar\u00e1 antes de responder. Esto puede mejorar la calidad de la respuesta, pero podr\u00eda aumentar la latencia."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "No se pudo conectar",
+                "download_failed": "Fallo en la descarga del modelo",
+                "entry_not_loaded": "No se pudo a\u00f1adir el agente. La configuraci\u00f3n est\u00e1 deshabilitada."
+            },
+            "entry_type": "Agente de conversaci\u00f3n",
+            "initiate_flow": {
+                "reconfigure": "Volver a configurar el agente de conversaci\u00f3n",
+                "user": "A\u00f1adir agente de conversaci\u00f3n"
+            },
+            "progress": {
+                "download": "Por favor, espera mientras se descarga el modelo, lo que puede llevar mucho tiempo. Revisa los registros de tu servidor Ollama para obtener m\u00e1s detalles."
+            },
+            "step": {
+                "download": {
+                    "title": "Descargando modelo"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Mantener vivo",
+                        "llm_hass_api": "Controla Home Assistant",
+                        "max_history": "M\u00e1ximo de mensajes del historial",
+                        "model": "Modelo",
+                        "name": "Nombre",
+                        "num_ctx": "Tama\u00f1o de la ventana de contexto",
+                        "prompt": "Instrucciones",
+                        "think": "Pensar antes de responder",
+                        "enable_gatekeeper": "Activar verificación previa (Gatekeeper)",
+                        "gatekeeper_model": "Modelo verificador de Gatekeeper",
+                        "gatekeeper_silent": "Descarte silencioso de falsas activaciones",
+                        "gatekeeper_heuristics": "Filtro heurístico rápido de ruido",
+                        "gatekeeper_prompt": "Instrucción del verificador"
+                    },
+                    "data_description": {
+                        "keep_alive": "Duraci\u00f3n en segundos que tarda Ollama en mantener el modelo en la memoria. -1 = indefinido, 0 = nunca.",
+                        "num_ctx": "N\u00famero m\u00e1ximo de tokens de texto que el modelo puede procesar. Disminuye el valor para reducir la RAM de Ollama o aum\u00e9ntalo para una gran cantidad de entidades expuestas.",
+                        "prompt": "Indica c\u00f3mo debe responder el LLM. Puede ser una plantilla.",
+                        "think": "Si est\u00e1 habilitado, el LLM pensar\u00e1 antes de responder. Esto puede mejorar la calidad de la respuesta, pero podr\u00eda aumentar la latencia.",
+                        "enable_gatekeeper": "Clasifica la intención con un modelo ultrarrápido (<100ms) antes de despertar el LLM pesado y ejecutar herramientas.",
+                        "gatekeeper_model": "Modelo ligero (ej: gemma2:2b) usado para clasificar si es una orden real o ruido/tele.",
+                        "gatekeeper_silent": "Ignora en silencio el audio de fondo o televisión sin hablar ni interrumpir.",
+                        "gatekeeper_heuristics": "Descarta instantáneamente ruidos de una letra o muletillas en 0ms.",
+                        "gatekeeper_prompt": "Prompt de sistema para el modelo clasificador."
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "unsupported_attachment_type": {
+            "message": "Ollama solo admite archivos adjuntos de im\u00e1genes en el contenido del usuario, pero recibe archivos adjuntos que no son im\u00e1genes."
+        }
+    }
+}

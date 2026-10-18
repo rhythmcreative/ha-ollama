@@ -1,0 +1,62 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "invalid_url": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Clau API"
+                },
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            },
+            "user": {
+                "data": {
+                    "api_key": "Clau API",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Ha fallat la connexi\u00f3"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "name": "Nom",
+                        "prompt": "Instruccions"
+                    },
+                    "data_description": {
+                        "num_ctx": "Nombre m\u00e0xim de 'tokens' de text que el model pot processar. Redueix-lo per rebaixar la mem\u00f2ria RAM d'Ollama o augmenta'lo si el nombre d'entitats exposades \u00e9s m\u00e9s gran"
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Ha fallat la connexi\u00f3"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "llm_hass_api": "Controla Home Assistant",
+                        "name": "Nom",
+                        "prompt": "Instruccions"
+                    },
+                    "data_description": {
+                        "num_ctx": "Nombre m\u00e0xim de 'tokens' de text que el model pot processar. Redueix-lo per rebaixar la mem\u00f2ria RAM d'Ollama o augmenta'lo si el nombre d'entitats exposades \u00e9s m\u00e9s gran"
+                    }
+                }
+            }
+        }
+    }
+}

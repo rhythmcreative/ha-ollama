@@ -1,0 +1,110 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Tj\u00e4nsten \u00e4r redan konfigurerad"
+        },
+        "error": {
+            "cannot_connect": "Det gick inte att ansluta",
+            "invalid_auth": "Ogiltig autentisering",
+            "invalid_url": "Ogiltigt v\u00e4rdnamn eller IP-adress",
+            "unknown": "Ov\u00e4ntat fel"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API-nyckel"
+                },
+                "description": "Ollama-integrationen m\u00e5ste autentiseras p\u00e5 nytt med din Ollama API-nyckel.",
+                "title": "Autentiseringen har upph\u00f6rt att g\u00e4lla f\u00f6r {name}"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API-nyckel",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Det gick inte att ansluta",
+                "download_failed": "Nedladdning av modell misslyckades",
+                "entry_not_loaded": "Det gick inte att l\u00e4gga till agenten. Konfigurationen \u00e4r inaktiverad."
+            },
+            "entry_type": "AI-uppgift",
+            "initiate_flow": {
+                "reconfigure": "Konfigurera om AI-uppgiften",
+                "user": "L\u00e4gg till AI-uppgift"
+            },
+            "progress": {
+                "download": "V\u00e4nligen v\u00e4nta medan modellen laddas ner, vilket kan ta mycket l\u00e5ng tid. Kontrollera dina Ollama-serverloggar f\u00f6r mer information."
+            },
+            "step": {
+                "download": {
+                    "title": "Laddar ner modell"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "H\u00e5ll vid liv",
+                        "max_history": "Max historikmeddelanden",
+                        "model": "Modell",
+                        "name": "Namn",
+                        "num_ctx": "Storlek p\u00e5 kontextf\u00f6nster",
+                        "prompt": "Instruktioner",
+                        "think": "T\u00e4nk efter innan svar"
+                    },
+                    "data_description": {
+                        "keep_alive": "Varaktighet i sekunder f\u00f6r Ollama att h\u00e5lla modellen i minnet. -1 = obest\u00e4md, 0 = aldrig.",
+                        "num_ctx": "Maximalt antal texttokens som modellen kan bearbeta. L\u00e4gre f\u00f6r att minska Ollama RAM, eller h\u00f6gre f\u00f6r ett stort antal exponerade entiteter.",
+                        "prompt": "Instruera hur LLM:en ska svara. Detta kan vara en mall.",
+                        "think": "Om aktiverat kommer LLM:en att t\u00e4nka efter innan den svarar. Detta kan f\u00f6rb\u00e4ttra svarskvaliteten men \u00f6ka f\u00f6rdr\u00f6jningen."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Det gick inte att ansluta",
+                "download_failed": "Nedladdning av modell misslyckades",
+                "entry_not_loaded": "Det gick inte att l\u00e4gga till agenten. Konfigurationen \u00e4r inaktiverad."
+            },
+            "entry_type": "Konversationsagent",
+            "initiate_flow": {
+                "reconfigure": "Konfigurera om konversationsagenten",
+                "user": "L\u00e4gg till konversationsagent"
+            },
+            "progress": {
+                "download": "V\u00e4nligen v\u00e4nta medan modellen laddas ner, vilket kan ta mycket l\u00e5ng tid. Kontrollera dina Ollama-serverloggar f\u00f6r mer information."
+            },
+            "step": {
+                "download": {
+                    "title": "Laddar ner modell"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "H\u00e5ll vid liv",
+                        "llm_hass_api": "Styr Home Assistant",
+                        "max_history": "Max historikmeddelanden",
+                        "model": "Modell",
+                        "name": "Namn",
+                        "num_ctx": "Storlek p\u00e5 kontextf\u00f6nster",
+                        "prompt": "Instruktioner",
+                        "think": "T\u00e4nk efter innan svar"
+                    },
+                    "data_description": {
+                        "keep_alive": "Varaktighet i sekunder f\u00f6r Ollama att h\u00e5lla modellen i minnet. -1 = obest\u00e4md, 0 = aldrig.",
+                        "num_ctx": "Maximalt antal texttokens som modellen kan bearbeta. L\u00e4gre f\u00f6r att minska Ollama RAM, eller h\u00f6gre f\u00f6r ett stort antal exponerade entiteter.",
+                        "prompt": "Instruera hur LLM:en ska svara. Detta kan vara en mall.",
+                        "think": "Om aktiverat kommer LLM:en att t\u00e4nka efter innan den svarar. Detta kan f\u00f6rb\u00e4ttra svarskvaliteten men \u00f6ka f\u00f6rdr\u00f6jningen."
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "unsupported_attachment_type": {
+            "message": "Ollama st\u00f6der endast bildbilagor i anv\u00e4ndarinneh\u00e5ll, men har tagit emot en bilaga som inte \u00e4r en bild."
+        }
+    }
+}

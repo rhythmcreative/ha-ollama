@@ -1,0 +1,103 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "T\u00e1 an tseirbh\u00eds cumraithe cheana f\u00e9in"
+        },
+        "error": {
+            "cannot_connect": "Theip ar an nascadh",
+            "invalid_auth": "F\u00edordheimhni\u00fa neamhbhail\u00ed",
+            "invalid_url": "Ainm \u00f3stach n\u00f3 seoladh IP neamhbhail\u00ed",
+            "unknown": "Earr\u00e1id gan choinne"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Eochair API"
+                },
+                "description": "N\u00ed m\u00f3r an comhth\u00e1th\u00fa Ollama a ath-fh\u00edordheimhni\u00fa le d'eochair API Ollama.",
+                "title": "T\u00e1 an f\u00edordheimhni\u00fa imithe in \u00e9ag do {name}"
+            },
+            "user": {
+                "data": {
+                    "api_key": "Eochair API",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Theip ar an nascadh",
+                "download_failed": "Theip ar \u00edosl\u00f3d\u00e1il an mh\u00fanla"
+            },
+            "progress": {
+                "download": "Fan go f\u00f3ill agus an tsamhail \u00e1 h\u00edosl\u00f3d\u00e1il, rud a d'fh\u00e9adfadh tamall an-fhada a th\u00f3g\u00e1il. Seice\u00e1il loga\u00ed do fhreastala\u00ed Ollama le haghaidh tuilleadh sonra\u00ed."
+            },
+            "step": {
+                "download": {
+                    "title": "Ag \u00edosl\u00f3d\u00e1il an mh\u00fanla"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Coinnigh beo",
+                        "max_history": "Uasmh\u00e9id teachtaireachta\u00ed staire",
+                        "model": "M\u00fanla",
+                        "name": "Ainm",
+                        "num_ctx": "M\u00e9id na fuinneoige comhth\u00e9acs",
+                        "prompt": "Treoracha",
+                        "think": "Smaoinigh sula bhfreagra\u00edonn t\u00fa"
+                    },
+                    "data_description": {
+                        "keep_alive": "Fad i soicind\u00ed a th\u00f3gann s\u00e9 ar Ollama an tsamhail a choinne\u00e1il i gcuimhne. -1 = neamhchinnte, 0 = riamh.",
+                        "num_ctx": "Uasmh\u00e9id na dt\u00f3c\u00e1n t\u00e9acs is f\u00e9idir leis an tsamhail a phr\u00f3ise\u00e1il. \u00cdsligh chun RAM Ollama a laghd\u00fa, n\u00f3 m\u00e9adaigh le haghaidh l\u00edon m\u00f3r eintiteas nochta.",
+                        "prompt": "Treoraigh conas ba ch\u00f3ir don LLM freagairt. Is f\u00e9idir \u00e9 seo a bheith ina theimpl\u00e9ad.",
+                        "think": "M\u00e1 chuirtear ar chumas \u00e9, smaoineoidh an LLM sula bhfreagr\u00f3idh s\u00e9. Is f\u00e9idir leis seo feabhas a chur ar ch\u00e1il\u00edocht na bhfreagra\u00ed ach d\u2019fh\u00e9adfadh s\u00e9 moill a mh\u00e9ad\u00fa."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Theip ar an nascadh",
+                "download_failed": "Theip ar \u00edosl\u00f3d\u00e1il an mh\u00fanla"
+            },
+            "entry_type": "Gn\u00edomhaire comhr\u00e1",
+            "initiate_flow": {
+                "reconfigure": "Athchumraigh gn\u00edomhaire comhr\u00e1",
+                "user": "Cuir gn\u00edomhaire comhr\u00e1 leis"
+            },
+            "progress": {
+                "download": "Fan go f\u00f3ill agus an tsamhail \u00e1 h\u00edosl\u00f3d\u00e1il, rud a d'fh\u00e9adfadh tamall an-fhada a th\u00f3g\u00e1il. Seice\u00e1il loga\u00ed do fhreastala\u00ed Ollama le haghaidh tuilleadh sonra\u00ed."
+            },
+            "step": {
+                "download": {
+                    "title": "Ag \u00edosl\u00f3d\u00e1il an mh\u00fanla"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Coinnigh beo",
+                        "llm_hass_api": "C\u00fant\u00f3ir Rialaithe Baile",
+                        "max_history": "Uasmh\u00e9id teachtaireachta\u00ed staire",
+                        "model": "M\u00fanla",
+                        "name": "Ainm",
+                        "num_ctx": "M\u00e9id na fuinneoige comhth\u00e9acs",
+                        "prompt": "Treoracha",
+                        "think": "Smaoinigh sula bhfreagra\u00edonn t\u00fa"
+                    },
+                    "data_description": {
+                        "keep_alive": "Fad i soicind\u00ed a th\u00f3gann s\u00e9 ar Ollama an tsamhail a choinne\u00e1il i gcuimhne. -1 = neamhchinnte, 0 = riamh.",
+                        "num_ctx": "Uasmh\u00e9id na dt\u00f3c\u00e1n t\u00e9acs is f\u00e9idir leis an tsamhail a phr\u00f3ise\u00e1il. \u00cdsligh chun RAM Ollama a laghd\u00fa, n\u00f3 m\u00e9adaigh le haghaidh l\u00edon m\u00f3r eintiteas nochta.",
+                        "prompt": "Treoraigh conas ba ch\u00f3ir don LLM freagairt. Is f\u00e9idir \u00e9 seo a bheith ina theimpl\u00e9ad.",
+                        "think": "M\u00e1 chuirtear ar chumas \u00e9, smaoineoidh an LLM sula bhfreagr\u00f3idh s\u00e9. Is f\u00e9idir leis seo feabhas a chur ar ch\u00e1il\u00edocht na bhfreagra\u00ed ach d\u2019fh\u00e9adfadh s\u00e9 moill a mh\u00e9ad\u00fa."
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "unsupported_attachment_type": {
+            "message": "N\u00ed thaca\u00edonn Ollama ach le ceangalt\u00e1in \u00edomh\u00e1nna in \u00e1bhar \u00fas\u00e1ideora, ach fuair s\u00e9 ceangalt\u00e1in nach \u00edomh\u00e1 iad."
+        }
+    }
+}

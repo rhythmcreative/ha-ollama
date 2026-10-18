@@ -1,0 +1,48 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Il servizio \u00e8 gi\u00e0 configurato"
+        },
+        "error": {
+            "cannot_connect": "Impossibile connettersi",
+            "unknown": "Errore imprevisto"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "conversation": {
+            "abort": {
+                "entry_not_loaded": "Impossibile aggiungere elementi. La configurazione \u00e8 disattivata."
+            },
+            "entry_type": "Agente di conversazione",
+            "initiate_flow": {
+                "reconfigure": "Riconfigura l'agente di conversazione",
+                "user": "Aggiungi agente di conversazione"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Mantieni attivo",
+                        "llm_hass_api": "Controlla Home Assistant",
+                        "max_history": "Numero massimo di messaggi della cronologia",
+                        "name": "Nome",
+                        "num_ctx": "Dimensioni della finestra contestuale",
+                        "think": "Pensa prima di rispondere"
+                    },
+                    "data_description": {
+                        "keep_alive": "Durata in secondi per il mantenimento del modello in memoria da parte di Ollama. -1 = indefinito, 0 = mai.",
+                        "num_ctx": "Numero massimo di token di testo che il modello pu\u00f2 elaborare. Riduci questo valore per diminuire l'uso della RAM da parte di Ollama, oppure aumentalo per gestire un numero elevato di entit\u00e0 esposte.",
+                        "prompt": "Dai istruzioni su come dovrebbe rispondere il LLM. Questo pu\u00f2 essere un modello.",
+                        "think": "Se abilitato, il LLM rifletter\u00e0 prima di rispondere. Questo pu\u00f2 migliorare la qualit\u00e0 delle risposte, ma potrebbe aumentare la latenza."
+                    }
+                }
+            }
+        }
+    }
+}

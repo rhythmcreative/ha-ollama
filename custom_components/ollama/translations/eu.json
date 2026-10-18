@@ -1,0 +1,72 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Zerbitzua dagoeneko konfiguratuta dago"
+        },
+        "error": {
+            "cannot_connect": "Konexioak huts egin du",
+            "invalid_auth": "Autentifikazio baliogabea",
+            "invalid_url": "Ostalari-izen edo IP helbide baliogabea",
+            "unknown": "Ustekabeko errorea"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API gakoa"
+                },
+                "title": "{name}-entzako autortza iraungi da"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API gakoa",
+                    "url": "URL-a"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Konexioak huts egin du"
+            },
+            "entry_type": "AA zeregina",
+            "initiate_flow": {
+                "reconfigure": "AA zereginak berkonfiguratu",
+                "user": "AA zeregina gehitu"
+            },
+            "step": {
+                "download": {
+                    "title": "Modeloa deskargatzen"
+                },
+                "set_options": {
+                    "data": {
+                        "model": "Modeloa",
+                        "name": "Izena",
+                        "prompt": "Argibideak"
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Konexioak huts egin du"
+            },
+            "initiate_flow": {
+                "user": "Elkarrizketa-agentea gehitu"
+            },
+            "step": {
+                "download": {
+                    "title": "Modeloa deskargatzen"
+                },
+                "set_options": {
+                    "data": {
+                        "llm_hass_api": "Home Assistant kontrolatu",
+                        "model": "Modeloa",
+                        "name": "Izena",
+                        "prompt": "Argibideak"
+                    }
+                }
+            }
+        }
+    }
+}

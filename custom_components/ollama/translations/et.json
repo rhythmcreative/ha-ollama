@@ -1,0 +1,110 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Teenus on juba seadistatud"
+        },
+        "error": {
+            "cannot_connect": "\u00dchendamine nurjus",
+            "invalid_auth": "Tuvastamine nurjus",
+            "invalid_url": "Sobimatu hostinimi v\u00f5i IP-aadress",
+            "unknown": "Ootamatu t\u00f5rge"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API v\u00f5ti"
+                },
+                "description": "Ollama sidumine peab Ollama API v\u00f5tmega uuesti autentima.",
+                "title": "{name} autentimine aegus"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API v\u00f5ti",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "\u00dchendamine nurjus",
+                "download_failed": "Mudeli allalaadimine nurjus",
+                "entry_not_loaded": "Agendi lisamine nurjus. Konfiguratsioon on keelatud."
+            },
+            "entry_type": "AI \u00fclesanne",
+            "initiate_flow": {
+                "reconfigure": "AI \u00fclesande \u00fcmberseadistamine",
+                "user": "AI \u00fclesande lisamine"
+            },
+            "progress": {
+                "download": "Oota kuni mudel alla laaditakse, mis v\u00f5ib v\u00f5tta v\u00e4ga kaua aega. Lisateabe saamiseks vaata oma Ollama serveri logisid."
+            },
+            "step": {
+                "download": {
+                    "title": "Mudeli allalaadimine"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Hoia elus",
+                        "max_history": "Maksimaalne ajaloos\u00f5numite arv",
+                        "model": "Mudel",
+                        "name": "Nimi",
+                        "num_ctx": "Kontekstiakna suurus",
+                        "prompt": "Juhised",
+                        "think": "M\u00f5tle enne vastamist"
+                    },
+                    "data_description": {
+                        "keep_alive": "Kestus sekundites, mille jooksul Ollama hoiab mudelit m\u00e4lus. -1 = m\u00e4\u00e4ramata, 0 = mitte kunagi.",
+                        "num_ctx": "Maksimaalne tekstim\u00e4rkide arv mida mudel saab t\u00f6\u00f6delda. V\u00e4henda Ollama RAM-i v\u00e4hendamiseks v\u00f5i suurenda suure hulga avatud olemite jaoks.",
+                        "prompt": "Juhenda kuidas LLM peaks reageerima. See v\u00f5ib olla mall.",
+                        "think": "Kui see on lubatud, m\u00f5tleb LLM enne vastamist. See v\u00f5ib parandada vastuse kvaliteeti kuid v\u00f5ib suurendada viivitust."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "\u00dchendamine nurjus",
+                "download_failed": "Mudeli allalaadimine nurjus",
+                "entry_not_loaded": "Agendi lisamine nurjus. Konfiguratsioon on keelatud."
+            },
+            "entry_type": "Vestlusagent",
+            "initiate_flow": {
+                "reconfigure": "Vestlusagendi \u00fcmberseadistamine",
+                "user": "Lisa vestlusagent"
+            },
+            "progress": {
+                "download": "Oota kuni mudel alla laaditakse, mis v\u00f5ib v\u00f5tta v\u00e4ga kaua aega. Lisateabe saamiseks vaata oma Ollama serveri logisid."
+            },
+            "step": {
+                "download": {
+                    "title": "Mudeli allalaadimine"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Hoia elus",
+                        "llm_hass_api": "Home Assistanti juhtimine",
+                        "max_history": "Maksimaalne ajaloos\u00f5numite arv",
+                        "model": "Mudel",
+                        "name": "Nimi",
+                        "num_ctx": "Kontekstiakna suurus",
+                        "prompt": "Juhised",
+                        "think": "M\u00f5tle enne vastamist"
+                    },
+                    "data_description": {
+                        "keep_alive": "Kestus sekundites, mille jooksul Ollama hoiab mudelit m\u00e4lus. -1 = m\u00e4\u00e4ramata, 0 = mitte kunagi.",
+                        "num_ctx": "Maksimaalne tekstim\u00e4rkide arv mida mudel saab t\u00f6\u00f6delda. V\u00e4henda Ollama RAM-i v\u00e4hendamiseks v\u00f5i suurenda suure hulga avatud olemite jaoks.",
+                        "prompt": "Juhenda kuidas LLM peaks reageerima. See v\u00f5ib olla mall.",
+                        "think": "Kui see on lubatud, m\u00f5tleb LLM enne vastamist. See v\u00f5ib parandada vastuse kvaliteeti kuid v\u00f5ib suurendada viivitust."
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "unsupported_attachment_type": {
+            "message": "Ollama toetab kasutaja sisus ainult piltide manuseid, kuid sai ka muid manuseid kui pildid."
+        }
+    }
+}

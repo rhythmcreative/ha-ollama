@@ -1,0 +1,78 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dienst is al geconfigureerd"
+        },
+        "error": {
+            "cannot_connect": "Kan geen verbinding maken",
+            "invalid_auth": "Ongeldige authenticatie",
+            "invalid_url": "Ongeldige hostnaam of IP-adres",
+            "unknown": "Onverwachte fout"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API-sleutel"
+                },
+                "description": "De Ollama-integratie moet zich opnieuw authenticeren met je Ollama API-sleutel.",
+                "title": "Authenticatie is verlopen voor {name}"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API-sleutel",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Kan geen verbinding maken"
+            },
+            "entry_type": "AI taak",
+            "step": {
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Behouden",
+                        "max_history": "Maximum geschiedenisberichten",
+                        "name": "Naam",
+                        "num_ctx": "Grootte van het contextvenster",
+                        "prompt": "Instructies",
+                        "think": "Denk na vooraleer te reageren"
+                    },
+                    "data_description": {
+                        "keep_alive": "Duur in seconden waarin Ollama het model in het geheugen houdt. -1 = onbepaald, 0 = nooit.",
+                        "num_ctx": "Maximaal aantal teksttokens dat het model kan verwerken. Verlagen om het Ollama RAM-geheugen te verminderen, of verhogen voor een groot aantal blootgestelde entiteiten.",
+                        "prompt": "Geef aan hoe de LLM moet reageren. Dit kan een template zijn.",
+                        "think": "Als deze optie is ingeschakeld, zal de LLM nadenken voordat hij reageert. Dit kan de reactiekwaliteit verbeteren, maar kan de latentie verhogen."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Kan geen verbinding maken"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Behouden",
+                        "llm_hass_api": "Beheer Home Assistant",
+                        "max_history": "Maximum geschiedenisberichten",
+                        "name": "Naam",
+                        "num_ctx": "Grootte van het contextvenster",
+                        "prompt": "Instructies",
+                        "think": "Denk na vooraleer te reageren"
+                    },
+                    "data_description": {
+                        "keep_alive": "Duur in seconden waarin Ollama het model in het geheugen houdt. -1 = onbepaald, 0 = nooit.",
+                        "num_ctx": "Maximaal aantal teksttokens dat het model kan verwerken. Verlagen om het Ollama RAM-geheugen te verminderen, of verhogen voor een groot aantal blootgestelde entiteiten.",
+                        "prompt": "Geef aan hoe de LLM moet reageren. Dit kan een template zijn.",
+                        "think": "Als deze optie is ingeschakeld, zal de LLM nadenken voordat hij reageert. Dit kan de reactiekwaliteit verbeteren, maar kan de latentie verhogen."
+                    }
+                }
+            }
+        }
+    }
+}

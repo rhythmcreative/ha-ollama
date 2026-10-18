@@ -1,0 +1,38 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Nie mo\u017cna nawi\u0105za\u0107 po\u0142\u0105czenia",
+            "unknown": "Nieoczekiwany b\u0142\u0105d"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "entry_type": "Zadanie AI",
+            "initiate_flow": {
+                "reconfigure": "Ponownie konfiguruj zadanie AI",
+                "user": "Dodaj zadanie AI"
+            }
+        },
+        "conversation": {
+            "entry_type": "Agent konwersacji",
+            "initiate_flow": {
+                "reconfigure": "Ponownie konfiguruj agenta konwersacji",
+                "user": "Dodaj agenta konwersacji"
+            },
+            "step": {
+                "set_options": {
+                    "data_description": {
+                        "prompt": "Poinstruuj, jak model LLM powinien odpowiada\u0107. Mo\u017ce to by\u0107 szablon."
+                    }
+                }
+            }
+        }
+    }
+}

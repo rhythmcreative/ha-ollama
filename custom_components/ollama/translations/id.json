@@ -1,0 +1,48 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Layanan sudah dikonfigurasi"
+        },
+        "error": {
+            "cannot_connect": "Gagal terhubung",
+            "invalid_url": "Nama host atau alamat IP tidak valid",
+            "unknown": "Kesalahan tak terduga"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Gagal terhubung"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "name": "Nama",
+                        "prompt": "Instruksi"
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Gagal terhubung"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "llm_hass_api": "Kendalikan Home Assistant",
+                        "name": "Nama",
+                        "prompt": "Instruksi"
+                    }
+                }
+            }
+        }
+    }
+}

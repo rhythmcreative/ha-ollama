@@ -1,0 +1,110 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Paslauga jau sukonfig\u016bruota"
+        },
+        "error": {
+            "cannot_connect": "Nepavyko prisijungti",
+            "invalid_auth": "Neteisingas autentifikavimas",
+            "invalid_url": "Neteisingas pagrindinio kompiuterio pavadinimas arba IP adresas",
+            "unknown": "Netik\u0117ta klaida"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API raktas"
+                },
+                "description": "Ollama integracijai reikia i\u0161 naujo autentifikuotis naudojant j\u016bs\u0173 Ollama API rakt\u0105.",
+                "title": "Baig\u0117si {name} autentifikavimo galiojimas"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API raktas",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Nepavyko prisijungti",
+                "download_failed": "Modelio atsisiuntimas nepavyko",
+                "entry_not_loaded": "Nepavyko prid\u0117ti agento. Konfig\u016bracija i\u0161jungta."
+            },
+            "entry_type": "AI u\u017eduotis",
+            "initiate_flow": {
+                "reconfigure": "Pertvarkyti AI u\u017eduot\u012f",
+                "user": "Prid\u0117ti AI u\u017eduot\u012f"
+            },
+            "progress": {
+                "download": "Palaukite, kol modelis bus atsisi\u0173stas, tai gali u\u017etrukti labai ilgai. Daugiau informacijos rasite savo Ollama serverio \u017eurnaluose."
+            },
+            "step": {
+                "download": {
+                    "title": "Atsisiun\u010diamas modelis"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "I\u0161laikyti gyv\u0105",
+                        "max_history": "Maksimalus istorijos prane\u0161im\u0173 skai\u010dius",
+                        "model": "Modelis",
+                        "name": "Vardas",
+                        "num_ctx": "Konteksto lango dydis",
+                        "prompt": "Instrukcijos",
+                        "think": "Pagalvokite prie\u0161 atsakydami"
+                    },
+                    "data_description": {
+                        "keep_alive": "Ollama modelio i\u0161saugojimo atmintyje trukm\u0117 sekund\u0117mis. -1 = neribotas laikas, 0 = niekada.",
+                        "num_ctx": "Did\u017eiausias teksto \u017eenkl\u0173, kuriuos modelis gali apdoroti, skai\u010dius. Suma\u017einkite, kad suma\u017eintum\u0117te Ollama operatyvi\u0105j\u0105 atmint\u012f, arba padidinkite, jei yra daug atskleist\u0173 esybi\u0173.",
+                        "prompt": "Nurodykite, kaip LLM tur\u0117t\u0173 reaguoti. Tai gali b\u016bti \u0161ablonas.",
+                        "think": "Jei \u0161i funkcija \u012fjungta, LLM prie\u0161 atsakydamas pagalvos. Tai gali pagerinti atsakymo kokyb\u0119, ta\u010diau gali padid\u0117ti v\u0117lavimas."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Nepavyko prisijungti",
+                "download_failed": "Modelio atsisiuntimas nepavyko",
+                "entry_not_loaded": "Nepavyko prid\u0117ti agento. Konfig\u016bracija i\u0161jungta."
+            },
+            "entry_type": "Pokalbi\u0173 agentas",
+            "initiate_flow": {
+                "reconfigure": "Perkonfig\u016bruoti pokalbi\u0173 agent\u0105",
+                "user": "Prid\u0117ti pokalbi\u0173 agent\u0105"
+            },
+            "progress": {
+                "download": "Palaukite, kol modelis bus atsisi\u0173stas, tai gali u\u017etrukti labai ilgai. Daugiau informacijos rasite savo Ollama serverio \u017eurnaluose."
+            },
+            "step": {
+                "download": {
+                    "title": "Atsisiun\u010diamas modelis"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "I\u0161laikyti gyv\u0105",
+                        "llm_hass_api": "Valdykite Home Assistant",
+                        "max_history": "Maksimalus istorijos prane\u0161im\u0173 skai\u010dius",
+                        "model": "Modelis",
+                        "name": "Vardas",
+                        "num_ctx": "Konteksto lango dydis",
+                        "prompt": "Instrukcijos",
+                        "think": "Pagalvokite prie\u0161 atsakydami"
+                    },
+                    "data_description": {
+                        "keep_alive": "Ollama modelio i\u0161saugojimo atmintyje trukm\u0117 sekund\u0117mis. -1 = neribotas laikas, 0 = niekada.",
+                        "num_ctx": "Did\u017eiausias teksto \u017eenkl\u0173, kuriuos modelis gali apdoroti, skai\u010dius. Suma\u017einkite, kad suma\u017eintum\u0117te Ollama operatyvi\u0105j\u0105 atmint\u012f, arba padidinkite, jei yra daug atskleist\u0173 esybi\u0173.",
+                        "prompt": "Nurodykite, kaip LLM tur\u0117t\u0173 reaguoti. Tai gali b\u016bti \u0161ablonas.",
+                        "think": "Jei \u0161i funkcija \u012fjungta, LLM prie\u0161 atsakydamas pagalvos. Tai gali pagerinti atsakymo kokyb\u0119, ta\u010diau gali padid\u0117ti v\u0117lavimas."
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "unsupported_attachment_type": {
+            "message": "Ollama palaiko tik vaizd\u0173 priedus naudotojo turinyje, bet gavo ne vaizd\u0173 priedus."
+        }
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dienst ist bereits konfiguriert"
+        },
+        "error": {
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "invalid_auth": "Ung\u00fcltige Authentifizierung",
+            "invalid_url": "Ung\u00fcltiger Hostname oder IP-Adresse",
+            "unknown": "Unerwarteter Fehler"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API-Schl\u00fcssel"
+                },
+                "description": "Die Ollama-Integration muss sich mit deinem Ollama-API-Schl\u00fcssel erneut authentifizieren.",
+                "title": "Authentifizierung f\u00fcr {name} abgelaufen"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API-Schl\u00fcssel",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Verbindung fehlgeschlagen",
+                "download_failed": "Herunterladen des Modells fehlgeschlagen",
+                "entry_not_loaded": "Agent konnte nicht hinzugef\u00fcgt werden. Die Konfiguration ist deaktiviert."
+            },
+            "entry_type": "KI-Task",
+            "initiate_flow": {
+                "reconfigure": "KI-Task neu konfigurieren",
+                "user": "KI-Task hinzuf\u00fcgen"
+            },
+            "progress": {
+                "download": "Bitte warte, w\u00e4hrend das Modell heruntergeladen wird. Dies kann sehr lange dauern. Weitere Informationen findest du in den Ollama Server-Protokollen."
+            },
+            "step": {
+                "download": {
+                    "title": "Modell wird heruntergeladen"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Aktiv halten",
+                        "max_history": "Max. Nachrichten im Verlauf",
+                        "model": "Modell",
+                        "name": "Name",
+                        "num_ctx": "Gr\u00f6\u00dfe des Kontextfensters",
+                        "prompt": "Anweisungen",
+                        "think": "Vor Antwort nachdenken"
+                    },
+                    "data_description": {
+                        "keep_alive": "Dauer in Sekunden, die Ollama das Modell im Speicher halten soll. -1 = unbegrenzt, 0 = nie.",
+                        "num_ctx": "Maximalzahl von Texttoken, die das Modell verarbeiten kann. Verringere den Wert, um den Ollama-RAM zu reduzieren, oder erh\u00f6he ihn bei einer gro\u00dfen Anzahl verf\u00fcgbarer Entit\u00e4ten.",
+                        "prompt": "Gib an, wie das LLM antworten soll. Dies kann ein Template sein.",
+                        "think": "Wenn diese Option aktiviert ist, \u00fcberlegt das LLM, bevor es antwortet. Dies kann die Antwortqualit\u00e4t verbessern, aber auch die Latenz erh\u00f6hen."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Verbindung fehlgeschlagen",
+                "download_failed": "Herunterladen des Modells fehlgeschlagen",
+                "entry_not_loaded": "Agent konnte nicht hinzugef\u00fcgt werden. Die Konfiguration ist deaktiviert."
+            },
+            "entry_type": "Konversationsagent",
+            "initiate_flow": {
+                "reconfigure": "Konversationsagent neu konfigurieren",
+                "user": "Konversationsagent hinzuf\u00fcgen"
+            },
+            "progress": {
+                "download": "Bitte warte, w\u00e4hrend das Modell heruntergeladen wird. Dies kann sehr lange dauern. Weitere Informationen findest du in den Ollama Server-Protokollen."
+            },
+            "step": {
+                "download": {
+                    "title": "Modell wird heruntergeladen"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Aktiv halten",
+                        "llm_hass_api": "Home Assistant steuern",
+                        "max_history": "Max. Nachrichten im Verlauf",
+                        "model": "Modell",
+                        "name": "Name",
+                        "num_ctx": "Gr\u00f6\u00dfe des Kontextfensters",
+                        "prompt": "Anweisungen",
+                        "think": "Vor Antwort nachdenken"
+                    },
+                    "data_description": {
+                        "keep_alive": "Dauer in Sekunden, die Ollama das Modell im Speicher halten soll. -1 = unbegrenzt, 0 = nie.",
+                        "num_ctx": "Maximalzahl von Texttoken, die das Modell verarbeiten kann. Verringere den Wert, um den Ollama-RAM zu reduzieren, oder erh\u00f6he ihn bei einer gro\u00dfen Anzahl verf\u00fcgbarer Entit\u00e4ten.",
+                        "prompt": "Gib an, wie das LLM antworten soll. Dies kann ein Template sein.",
+                        "think": "Wenn diese Option aktiviert ist, \u00fcberlegt das LLM, bevor es antwortet. Dies kann die Antwortqualit\u00e4t verbessern, aber auch die Latenz erh\u00f6hen."
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "unsupported_attachment_type": {
+            "message": "Ollama unterst\u00fctzt in Benutzerinhalten nur Bildanh\u00e4nge, hat aber Anh\u00e4nge empfangen, die keine Bilder sind."
+        }
+    }
+}

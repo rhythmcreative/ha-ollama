@@ -1,0 +1,110 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Usluga je ve\u0107 pode\u0161ena"
+        },
+        "error": {
+            "cannot_connect": "Povezivanje nije uspelo",
+            "invalid_auth": "Neva\u017ee\u0107i podaci za prijavu",
+            "invalid_url": "Neispravan naziv hosta ili IP adresa",
+            "unknown": "Neo\u010dekivana gre\u0161ka"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API klju\u010d"
+                },
+                "description": "Ollama integracija mora ponovo da se prijavi pomo\u0107u va\u0161eg Ollama API klju\u010da.",
+                "title": "Prijava je istekla za {name}"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API klju\u010d",
+                    "url": "URL adresa"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Povezivanje nije uspelo",
+                "download_failed": "Preuzimanje modela nije uspelo",
+                "entry_not_loaded": "Dodavanje agenta nije uspelo. Konfiguracija je onemogu\u0107ena."
+            },
+            "entry_type": "AI zadatak",
+            "initiate_flow": {
+                "reconfigure": "Ponovo konfiguri\u0161i AI zadatak",
+                "user": "Dodajte AI zadatak"
+            },
+            "progress": {
+                "download": "Sa\u010dekajte dok se model preuzima, \u0161to mo\u017ee potrajati du\u017ee vreme.\nProverite zapise Ollama servera za vi\u0161e detalja."
+            },
+            "step": {
+                "download": {
+                    "title": "Preuzimanje modela"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Odr\u017eavanje veze",
+                        "max_history": "Maksimalan broj poruka istorije",
+                        "model": "Model",
+                        "name": "Naziv",
+                        "num_ctx": "Veli\u010dina prozora konteksta",
+                        "prompt": "Uputstva",
+                        "think": "Razmislite pre nego \u0161to odgovorite"
+                    },
+                    "data_description": {
+                        "keep_alive": "Trajanje u sekundama tokom kojeg Ollama zadr\u017eava model u memoriji. -1 = neograni\u010deno, 0 = nikada.",
+                        "num_ctx": "Maksimalan broj tekstualnih tokena koje model mo\u017ee da obradi. Smanjite za manju potro\u0161nju Ollama RAM\u2011a ili pove\u0107ajte za veliki broj izlo\u017eenih entiteta.",
+                        "prompt": "Uputite kako LLM treba da odgovori. Ovo mo\u017ee biti \u0161ablon.",
+                        "think": "Ako je omogu\u0107eno, LLM \u0107e razmisliti pre nego \u0161to odgovori. Ovo mo\u017ee pobolj\u0161ati kvalitet odgovora, ali mo\u017ee pove\u0107ati ka\u0161njenje."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Povezivanje nije uspelo",
+                "download_failed": "Preuzimanje modela nije uspelo",
+                "entry_not_loaded": "Dodavanje agenta nije uspelo. Konfiguracija je onemogu\u0107ena."
+            },
+            "entry_type": "Agent za konverzaciju",
+            "initiate_flow": {
+                "reconfigure": "Ponovo konfiguri\u0161i agenta za konverzaciju",
+                "user": "Dodajte agenta za razgovor"
+            },
+            "progress": {
+                "download": "Sa\u010dekajte dok se model preuzima, \u0161to mo\u017ee potrajati du\u017ee vreme.\nProverite zapise Ollama servera za vi\u0161e detalja."
+            },
+            "step": {
+                "download": {
+                    "title": "Preuzimanje modela"
+                },
+                "set_options": {
+                    "data": {
+                        "keep_alive": "Odr\u017eavanje veze",
+                        "llm_hass_api": "Upravljanje Home Assistant\u2011om",
+                        "max_history": "Maksimalan broj poruka istorije",
+                        "model": "Model",
+                        "name": "Naziv",
+                        "num_ctx": "Veli\u010dina prozora konteksta",
+                        "prompt": "Uputstva",
+                        "think": "Razmislite pre nego \u0161to odgovorite"
+                    },
+                    "data_description": {
+                        "keep_alive": "Trajanje u sekundama tokom kojeg Ollama zadr\u017eava model u memoriji. -1 = neograni\u010deno, 0 = nikada.",
+                        "num_ctx": "Maksimalan broj tekstualnih tokena koje model mo\u017ee da obradi. Smanjite za manju potro\u0161nju Ollama RAM\u2011a ili pove\u0107ajte za veliki broj izlo\u017eenih entiteta.",
+                        "prompt": "Uputite kako LLM treba da odgovori. Ovo mo\u017ee biti \u0161ablon.",
+                        "think": "Ako je omogu\u0107eno, LLM \u0107e razmisliti pre nego \u0161to odgovori. Ovo mo\u017ee pobolj\u0161ati kvalitet odgovora, ali mo\u017ee pove\u0107ati ka\u0161njenje."
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "unsupported_attachment_type": {
+            "message": "Ollama podr\u017eava samo slikovne priloge u korisni\u010dkom sadr\u017eaju, ali je primljen prilog koji nije slika."
+        }
+    }
+}

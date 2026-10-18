@@ -1,0 +1,17 @@
+{
+    "config_subentries": {
+        "ai_task_data": {
+            "entry_type": "AI-opgave",
+            "initiate_flow": {
+                "reconfigure": "Omkonfigur\u00e9r AI-opgave",
+                "user": "Tilf\u00f8j AI-opgave"
+            }
+        },
+        "conversation": {
+            "entry_type": "Samtaleagent",
+            "initiate_flow": {
+                "user": "Tilf\u00f8j samtaleagent"
+            }
+        }
+    }
+}
