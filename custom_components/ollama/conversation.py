@@ -118,16 +118,21 @@ class OllamaConversationEntity(
         system_prompt = settings.get(
             CONF_GATEKEEPER_PROMPT, DEFAULT_GATEKEEPER_PROMPT
         )
-        prompt = f"{system_prompt}\nFrase: \"{clean_text}\"\nRespuesta:"
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": f'Frase: "{clean_text}"'},
+        ]
 
         try:
             async with asyncio.timeout(3.0):
-                res = await client.generate(
+                res = await client.chat(
                     model=model,
-                    prompt=prompt,
+                    messages=messages,
                     options={"temperature": 0.0, "num_predict": 3},
                 )
-                reply = (res.get("response") or "").strip().upper()
+                reply = (
+                    res.get("message", {}).get("content") or ""
+                ).strip().upper()
                 return "SI" in reply
         except Exception as err:
             _LOGGER.warning(
