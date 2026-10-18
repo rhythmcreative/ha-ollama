@@ -11,6 +11,10 @@
 [![Active](https://img.shields.io/badge/Status-Active-2EA44F?style=for-the-badge)](#)
 [![Latency](https://img.shields.io/badge/Latency-<100ms-blueviolet?style=for-the-badge)](#)
 
+<br/>
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=rhythmcreative&repository=ha-ollama&category=integration)
+
 </div>
 
 ## About
@@ -33,7 +37,9 @@ Instead of running an external proxy or intermediate conversation agent, the Oll
 
 ### 1. Installation via HACS (Recommended)
 
-1. Open **HACS** in your Home Assistant instance.
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=rhythmcreative&repository=ha-ollama&category=integration)
+
+1. Click the button above, or manually open **HACS** in your Home Assistant instance.
 2. Click the three dots in the top right corner → **Custom repositories**.
 3. Add the repository URL:
    ```text
