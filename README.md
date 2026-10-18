@@ -7,9 +7,7 @@
 [![Home Assistant](https://img.shields.io/badge/Home_Assistant-41BDF5?style=for-the-badge&logo=homeassistant&logoColor=white)](https://www.home-assistant.io/)
 [![HACS](https://img.shields.io/badge/HACS-Custom-orange?style=for-the-badge&logo=hacs&logoColor=white)](https://hacs.xyz/)
 [![Ollama](https://img.shields.io/badge/Ollama-Local_AI-000000?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.com/)
-[![Gemma](https://img.shields.io/badge/Model-Gemma_2:2B-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/gemma)
 [![Active](https://img.shields.io/badge/Status-Active-2EA44F?style=for-the-badge)](#)
-[![Latency](https://img.shields.io/badge/Latency-<100ms-blueviolet?style=for-the-badge)](#)
 
 <br/>
 
